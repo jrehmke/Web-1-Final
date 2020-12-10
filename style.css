@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap');
+
+
+body {
+  background-color: #f2ece1;
+  display: block;
+}
+
+
+.headerBar {
+  background-color: #6d2e46;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  opacity: 95%;
+}
+
+.logo{
+  height: 15%;
+  width: 15%;
+  padding: 10px;
+}
+
+.logo img{ 
+height: 15%;
+  width: 15%;
+}
+
+.name{
+  font-family: 'Sacramento', cursive;
+  color: white;
+  font-size: 30px;
+  margin-right: 25%;
+}
+
+a{
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+h3{
+  background-color: #D5B9B2;
+  text-align: center;
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 75px;
+  padding: 5%;
+}
+
+.about{
+  background-color: #A26769;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.about img{ 
+  height: 15%;
+  width: 15%;
+  filter: grayscale(100%);
+  padding: 10px;
+  border: 2px solid white;
+}
+
+h2{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 5%;
+  max-width: 250px;
+}
+
+.work{
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
+  grid-template-rows: 250px 250px 250px ;
+  row-gap: 65px;
+  column-gap: 25px;
+}
+
+.work img{
+  filter: brightness(0.8) grayscale(100%);
+  transition: filter 0.3s;
+  
+}
+
+.work img:hover{
+  filter: brightness(1) grayscale(0%);
+  
+}
+
+#example0{
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+#example0 img{
+  max-width: 300px;
+}
+
+#example1{
+  grid-area: 1 / 3 / 2 / 3;
+}
+#example1 img{
+  max-width: 300px;
+ background-color: white;
+}
+#example2{
+  grid-area: 2 / 2 / 2 / 2;
+}
+#example2 img{
+  max-width: 300px;
+}
+#example3{
+  grid-area: 2 / 3 / 3 / 3;
+}
+#example3 img{
+  max-width: 300px;
+}
+
+.contact{
+  margin: auto;
+  background-color: #A26769;
+  padding: 10px;
+  max-width: 500px;
+}
+
+h1{
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+h4{
+  margin-top: 5px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .name {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 50px;
+}
+  h2 {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+@media (min-width: 750px) {
+  .name {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 65px;
+  }
+   h2 {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
